@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Рисовалка</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="div_body">
+		Толщина кисти:<input type="range" id="slider" min="1" max="100" value="40">
+		<input id="sliderValue" min="1" value="40"></input>px<br>
+
+		<canvas id="canvas" height="500px" width="500px" class="canvas_palette"></canvas>
+		<div id="palette" class="canvas_palette">
+			<ul id="list">
+				<li class="colorPicker" id="pink"></li>
+				<li class="colorPicker" id="green"></li>
+				<li class="colorPicker" id="black"></li>
+				<li class="colorPicker" id="white"></li>
+				<li class="colorPicker" id="orange"></li>
+				<li class="colorPicker" id="magenta"></li>
+				<li class="colorPicker" id="blue"></li>
+				<li class="colorPicker" id="yellow"></li>
+				<li class="colorPicker" id="red"></li>
+				<li class="colorPicker" id="grey"></li>
+			</ul>
+		</div>
+
+		<br><label id="labelForClear" onclick="ClearCanvas()">Очистить холст</label>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

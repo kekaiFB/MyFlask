@@ -1,0 +1,47 @@
+body {
+	 background-image: linear-gradient(to right bottom, #7569f9, #eb4fcb, #ff578e, #ff8758, #ffba3d, #ffc33a, #ffcc36, #ffd634, #ffb734, #ff9840, #ff7a4f, #fb5f5f);
+}
+
+
+#icon_brand {
+	width: 50px;
+}
+
+.colortext_logo {
+	color: blue;
+}
+
+.colortext_logo1 {
+	color: yellow;
+}
+
+.colortext_logo2 {
+	color: red;
+}
+
+.content {
+	margin-left: 20px;
+	font-size: 18px;
+
+}
+
+.li_button {
+	margin: 5px;
+}
+
+span {
+	font-size: 24px;
+}
+
+
+.form1 {
+	background-color: ghostwhite;
+	border-radius: 	15px;
+	padding: 15px;
+	width: 	80%;
+}
+
+
+footer {
+	color: white;
+}

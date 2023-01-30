@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Таблица степеней</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {
+			background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+			font-family: 'Poppins', sans-serif;
+		}
+
+		table {
+			background-color: white;
+			text-align: center;
+			border-collapse: collapse; /*двойную сетку таблица склеиваем в одну*/
+			margin: auto; /*выравнивание по центру*/
+		    width: 100%;
+		    height: 100%;
+		    font-size: 14px;
+
+		}
+
+		/*округляем углы таблицы*/
+		.table_div {
+			border-radius: 10px;
+			border: 3px solid black;
+			margin: auto;
+		    width:75%;
+		    height:auto;
+		}
+
+
+		td {
+			border: 1px solid black;
+		}
+
+		/*увеличиваем надпись, и делаем жирным при наведении на ячейку*/
+		td:hover {
+			text-size: 40px;
+			font-weight: bold;
+		}
+
+		/*две ячейки неприкасамеые*/
+		.name_row {
+			font-size: 18px;
+			background-color: white;
+		}
+		/*делаем вторую строку синей*/
+		.color_row {
+			background: #b9deed;
+			font-size: 18px;
+		}
+		/*1 столбец, начиная с 3 строки синий*/
+		table>tbody>tr:nth-of-type(n+3)>td:nth-of-type(1) {
+			font-size: 18px;
+			background: #b9deed;
+		}
+
+		/*при наведении на ячейку, её строка становится зеленой*/
+		table>tbody>tr:hover {
+		padding: 20px;
+		background-color: #98FB98 !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="table_div">
+	<table>
+		<tr>
+			<td class="name_row" colspan="10">Таблица степеней:</td>
+		</tr>
+		<tr>
+			<td class="name_row">Число</td>
+			<td class="color_row">2</td>
+			<td class="color_row">3</td>
+			<td class="color_row">4</td>
+			<td class="color_row" class="color_row">5</td>
+			<td class="color_row">6</td>
+			<td class="color_row">7</td>
+			<td class="color_row">8</td>
+			<td class="color_row">9</td>
+			<td class="color_row">10</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>4</td>
+			<td>8</td>
+			<td>16</td>
+			<td>32</td>
+			<td>64</td>
+			<td>128</td>
+			<td>256</td>
+			<td>512</td>
+			<td>1 024</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>9</td>
+			<td>27</td>
+			<td>81</td>
+			<td>243</td>
+			<td>729</td>
+			<td>2 187</td>
+			<td>6 561</td>
+			<td>19 683</td>
+			<td>59 049</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>16</td>
+			<td>64</td>
+			<td>256</td>
+			<td>1 024</td>
+			<td>4 096</td>
+			<td>16 384</td>
+			<td>65 536</td>
+			<td>262 144</td>
+			<td>1 048 576</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>25</td>
+			<td>125</td>
+			<td>625</td>
+			<td>3 125</td>
+			<td>15 625</td>
+			<td>78 125</td>
+			<td>390 625</td>
+			<td>1 953 125</td>
+			<td>9 765 625</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>36</td>
+			<td>216</td>
+			<td>1 296</td>
+			<td>7 776</td>
+			<td>46 656</td>
+			<td>279 936</td>
+			<td>1 679 616</td>
+			<td>10 077 696</td>
+			<td>60 466 176</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>49</td>
+			<td>343</td>
+			<td>2 401</td>
+			<td>16 807</td>
+			<td>117 649</td>
+			<td>823 543</td>
+			<td>5 764 801</td>
+			<td>40 353 607</td>
+			<td>282 475 249</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>64</td>
+			<td>512</td>
+			<td>4 096</td>
+			<td>32 768</td>
+			<td>262 144</td>
+			<td>2 097 152</td>
+			<td>16 777 216</td>
+			<td>134 217 728</td>
+			<td>1 073 741 824</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>81</td>
+			<td>729</td>
+			<td>6 561</td>
+			<td>59 049</td>
+			<td>531 441</td>
+			<td>4 782 969</td>
+			<td>43 046 721</td>
+			<td>387 420 489</td>
+			<td>3 486 784 401</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>100</td>
+			<td>1 000</td>
+			<td>10 000</td>
+			<td>100 000</td>
+			<td>1 000 000</td>
+			<td>10 000 000</td>
+			<td>100 000 000</td>
+			<td>1 000 000 000</td>
+			<td>10 000 000 000</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>121</td>
+			<td>1 331</td>
+			<td>14 641</td>
+			<td>161 051</td>
+			<td>1 771 561</td>
+			<td>19 487 171</td>
+			<td>214 358 881</td>
+			<td>2 357 947 691</td>
+			<td>25 937 424 601</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>144</td>
+			<td>1 728</td>
+			<td>20 736</td>
+			<td>248 832</td>
+			<td>2 985 984</td>
+			<td>35 831 808</td>
+			<td>429 981 696</td>
+			<td>5 159 780 352</td>
+			<td>61 917 364 224</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>169</td>
+			<td>2 197</td>
+			<td>28 561</td>
+			<td>371 293</td>
+			<td>4 826 809</td>
+			<td>62 748 517</td>
+			<td>815 730 721</td>
+			<td>10 604 499 373</td>
+			<td>137 858 491 849</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>196</td>
+			<td>2 744</td>
+			<td>38 416</td>
+			<td>537 824</td>
+			<td>7 529 536</td>
+			<td>105 413 504</td>
+			<td>1 475 789 056</td>
+			<td>20 661 046 784</td>
+			<td>289 254 654 976</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>225</td>
+			<td>3 375</td>
+			<td>50 625</td>
+			<td>759 375</td>
+			<td>11 390 625</td>
+			<td>170 859 375</td>
+			<td>2 562 890 625</td>
+			<td>38 443 359 375</td>
+			<td>576 650 390 625</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>256</td>
+			<td>4 096</td>
+			<td>65 536</td>
+			<td>1 048 576</td>
+			<td>16 777 216</td>
+			<td>268 435 456</td>
+			<td>4 294 967 296</td>
+			<td>68 719 476 736</td>
+			<td>1 099 511 627 776</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>289</td>
+			<td>4 913</td>
+			<td>83 521</td>
+			<td>1 419 857</td>
+			<td>24 137 569</td>
+			<td>410 338 673</td>
+			<td>6 975 757 441</td>
+			<td>118 587 876 497</td>
+			<td>2 015 993 900 449</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>324</td>
+			<td>5 832</td>
+			<td>104 976</td>
+			<td>1 889 568</td>
+			<td>34 012 224</td>
+			<td>612 220 032</td>
+			<td>11 019 960 576</td>
+			<td>198 359 290 368</td>
+			<td>3 570 467 226 624</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>361</td>
+			<td>6 859</td>
+			<td>130 321</td>
+			<td>2 476 099</td>
+			<td>47 045 881</td>
+			<td>893 871 739</td>
+			<td>16 983 563 041</td>
+			<td>322 687 697 779</td>
+			<td>6 131 066 257 801</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>400</td>
+			<td>8 000</td>
+			<td>160 000</td>
+			<td>3 200 000</td>
+			<td>64 000 000</td>
+			<td>1 280 000 000</td>
+			<td>25 600 000 000</td>
+			<td>512 000 000 000</td>
+			<td>10 240 000 000 000</td>
+		</tr>
+		<tr>
+			<td>21</td>
+			<td>441</td>
+			<td>9 261</td>
+			<td>194 481</td>
+			<td>4 084 101</td>
+			<td>85 766 121</td>
+			<td>1 801 088 541</td>
+			<td>37 822 859 361</td>
+			<td>794 280 046 581</td>
+			<td>16 679 880 978 201</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>484</td>
+			<td>10 648</td>
+			<td>234 256</td>
+			<td>5 153 632</td>
+			<td>113 379 904</td>
+			<td>2 494 357 888</td>
+			<td>54 875 873 536</td>
+			<td>1 207 269 217 792</td>
+			<td>26 559 922 791 424</td>
+		</tr>
+		<tr>
+			<td>23</td>
+			<td>529</td>
+			<td>12 167</td>
+			<td>279 841</td>
+			<td>6 436 343</td>
+			<td>148 035 889</td>
+			<td>3 404 825 447</td>
+			<td>78 310 985 281</td>
+			<td>1 801 152 661 463</td>
+			<td>41 426 511 213 649</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>576</td>
+			<td>13 824</td>
+			<td>331 776</td>
+			<td>7 962 624</td>
+			<td>191 102 976</td>
+			<td>4 586 471 424</td>
+			<td>110 075 314 176</td>
+			<td>2 641 807 540 224</td>
+			<td>63 403 380 965 376</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>625</td>
+			<td>15 625</td>
+			<td>390 625</td>
+			<td>9 765 625</td>
+			<td>244 140 625</td>
+			<td>6 103 515 625</td>
+			<td>152 587 890 625</td>
+			<td>3 814 697 265 625</td>
+			<td>95 367 431 640 625</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

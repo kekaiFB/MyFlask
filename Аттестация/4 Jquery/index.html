@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<button id="imgToLeft"><-</button><button id="imgToRight">-></button>
+
+
+	<script type="text/javascript">
+		var img = $('<img>');
+		img.attr("src","img/01.png");
+		$('body').append(img);
+
+		var updateMargin = 0;
+		win_w = $(window).width()-400;
+
+		$('#imgToRight').click(function(){
+			if(updateMargin>=win_w){updateMargin=0}
+			updateMargin+=50;
+			img.fadeTo(0, updateMargin/1000)
+			$(img).css('margin-left', updateMargin + "px");
+		});
+
+		$('#imgToLeft').click(function(){
+			if(updateMargin<=0){updateMargin=win_w}
+			updateMargin-=50;
+			img.fadeTo(0, updateMargin/1000)
+			$(img).css('margin-left', updateMargin + "px");
+		});
+	</script>
+</body>
+</html>
